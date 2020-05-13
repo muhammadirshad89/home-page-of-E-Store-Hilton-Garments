@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    overflow-x: hidden;
+    color: aliceblue;
+    font-family: 'Flamenco', cursive;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://39z1ta174ebq3it4fw3az2mm-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/Blog-Header-49.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row{
+    max-width: 1188px;
+    margin: 0 auto;
+}
+.logo{
+    height: auto;
+    float: left;
+    margin-top: 10px;
+}
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left:  20px;
+}
+.main-nav li a{
+    padding: 5px 0;
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    font-weight: 100;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid rgb(255, 170, 170);
+    border-top: 2px solid rgb(255, 186, 186);
+}
+.main-content-header{
+    width: 900px;
+    /* border: 1PX solid red; */
+    position: absolute;
+    top: 50%;
+    left: 36%;
+    transform: translate(-40%, -40%);
+}
+h1{
+    color: rgb(250, 250, 250);
+    font-size: 250%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+}
+.btn-full{
+    background-color: transparent;
+    color: rgb(40, 38, 168);
+    margin-right: 15px;
+    border: 1px solid black;
+}
+.btn-nav{
+    background-color: transparent;
+    color: aliceblue;
+    border: 1px solid #fff;
+}
+.btn-full:hover{
+    background-color: azure;
+}
+.btn-nav:hover{
+    background-color: rgb(40, 38, 168);
+}
+.colorchange{
+    animation: colorchangehilton 1s infinite;
+}
+@keyframes colorchangehilton{
+    0%{color: red;}
+    25%{color: rgb(40, 38, 168);}
+    50%{color: white;}
+    100%{color: rgb(0, 65, 43);}
+}
+.mobile-icon{display: none;}
+@media only screen and (max-width: 1015px){
+    .main-content-header{
+        width: 100%;
+        padding:0 6%;
+    }
+}
+@media only screen and (max-width: 846px){
+    h1{font-size: 200%;}
+}
+@media only screen and (max-width: 698px){
+    h1{font-size: 170%;}
+    .main-nav{display: none;}
+    .mobile-icon{display: inline-block;
+                color: #fff;
+                float: right;
+                margin-top: 100px;
+                margin-right: 50px;}
+    .main-nav{float: left;}
+    .main-nav li{
+            display: block;
+            margin-top: 10px;}
+}
+@media only screen and (max-width: 556px){
+    h1{font-size: 100%;}
+    .btn-full{margin-bottom: 20px;}
+}
+@media only screen and (max-width: 370px){
+    h1{font-size: 70%;}
+}
